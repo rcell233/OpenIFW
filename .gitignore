@@ -1,0 +1,27 @@
+# Generated output and dependencies
+node_modules/
+dist/
+coverage/
+*.log
+
+# Local development and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+.idea/
+.vscode/
+
+# Private research, captures, archives and analysis environments
+/artifacts/
+/reference/
+/research/
+/tools/
+/requirements-analysis.txt
+.analysis-deps/
+.venv/
+__pycache__/
+*.pkf
+*.bundle

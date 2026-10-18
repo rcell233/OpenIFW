@@ -1,0 +1,994 @@
+[
+  {
+    "id": "tresure-island-dry",
+    "patch": "web/assets/tresure-island.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": true,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "b39e72227303d839b53529e7b50987600935e1c1b357da143f4e51334db70ccb"
+  },
+  {
+    "id": "tresure-island-full",
+    "patch": "web/assets/tresure-island.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": false,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "6e254a8bec836f9dbc113c332c1135e8dafa04b137593e4fdb63a2f3b5daef3c"
+  },
+  {
+    "id": "primer-dry",
+    "patch": "web/assets/presets/primer.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": true,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "d52bf14f4c0238c1d188a92e403f0f770f50b1db174e48c66fb8c97a610b130f"
+  },
+  {
+    "id": "primer-full",
+    "patch": "web/assets/presets/primer.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": false,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "b1cbb5a1b9c276165432efe1dc04f8699ee438172b41ade2a5794b440405f629"
+  },
+  {
+    "id": "ai-no-labyrinth-dry",
+    "patch": "web/assets/presets/ai-no-labyrinth.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": true,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "40ea0595a2c132523cf476d4ea1bdf9453f1857ac0aa913c4fc92a7f94180c81"
+  },
+  {
+    "id": "ai-no-labyrinth-full",
+    "patch": "web/assets/presets/ai-no-labyrinth.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": false,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "5730387ee31253658b4902f67950d4cbae1bf8bd0f4a2bae5f12ca1f2bcb27b4"
+  },
+  {
+    "id": "daisy-area-2-dry",
+    "patch": "web/assets/presets/daisy-area-2.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": true,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "ff05e9ce5883e1fb859fd071be5715147fa797c43d90efcdf1fefc8407c6a027"
+  },
+  {
+    "id": "daisy-area-2-full",
+    "patch": "web/assets/presets/daisy-area-2.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": false,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "2bc60d445f5fd5db6b28593587756a071e9b1424072bfd1420da4d49440fda12"
+  },
+  {
+    "id": "wanna-go-to-hawaii-dry",
+    "patch": "web/assets/presets/wanna-go-to-hawaii.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": true,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "90f2081c3e87bf6d822be4ad927439a759052b7df18a1973bee658710a7c1f00"
+  },
+  {
+    "id": "wanna-go-to-hawaii-full",
+    "patch": "web/assets/presets/wanna-go-to-hawaii.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": false,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "67b8a5b6e8287ff4197762da6a3b1a86e5f5aeb9b5070e4b102d8912ebeaa119"
+  },
+  {
+    "id": "judd-ish-2000-dry",
+    "patch": "web/assets/presets/judd-ish-2000.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": true,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "6da6091926f27f84fe1c4f330f3e7821c7e3ef2f79357e526bec03ec34caac12"
+  },
+  {
+    "id": "judd-ish-2000-full",
+    "patch": "web/assets/presets/judd-ish-2000.json",
+    "events": [
+      {
+        "time": 0.02,
+        "type": "breath",
+        "value": 0.7874015748031497
+      },
+      {
+        "time": 0.06,
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497
+      },
+      {
+        "time": 0.45,
+        "type": "breath",
+        "value": 0.45
+      },
+      {
+        "time": 0.8,
+        "type": "breath",
+        "value": 1
+      },
+      {
+        "time": 0.95,
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.6299212598425197
+      },
+      {
+        "time": 1.1,
+        "type": "noteOff",
+        "note": 60
+      },
+      {
+        "time": 1.25,
+        "type": "bend",
+        "value": 0.2
+      },
+      {
+        "time": 1.4,
+        "type": "bend",
+        "value": 0
+      },
+      {
+        "time": 1.6,
+        "type": "noteOff",
+        "note": 72
+      },
+      {
+        "time": 1.9,
+        "type": "breath",
+        "value": 0
+      }
+    ],
+    "options": {
+      "duration": 3.2,
+      "dry": false,
+      "breath": 0
+    },
+    "frames": 153600,
+    "wavSha256": "2fcfff56fe02b331d68078f2aa4f522d3830f1e76684dff6e1fd7037901d941d"
+  },
+  {
+    "id": "tresure-long",
+    "patch": "web/assets/tresure-island.json",
+    "events": [
+      {
+        "type": "panic",
+        "channel": 1,
+        "tick": 0,
+        "order": 1,
+        "time": 0
+      },
+      {
+        "type": "breath",
+        "value": 0,
+        "channel": 1,
+        "tick": 1200,
+        "order": 2,
+        "time": 0.02
+      },
+      {
+        "type": "glide",
+        "value": 0,
+        "channel": 1,
+        "tick": 1800,
+        "order": 3,
+        "time": 0.03
+      },
+      {
+        "type": "vibrato",
+        "value": 0,
+        "channel": 1,
+        "tick": 2400,
+        "order": 4,
+        "time": 0.04
+      },
+      {
+        "type": "bend",
+        "value": 0,
+        "channel": 1,
+        "tick": 3000,
+        "order": 5,
+        "time": 0.05
+      },
+      {
+        "type": "breath",
+        "value": 0.7874015748031497,
+        "channel": 1,
+        "tick": 12000,
+        "order": 6,
+        "time": 0.2
+      },
+      {
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497,
+        "channel": 1,
+        "tick": 48000,
+        "order": 7,
+        "time": 0.8
+      },
+      {
+        "type": "noteOff",
+        "note": 60,
+        "channel": 1,
+        "tick": 69000,
+        "order": 8,
+        "time": 1.15
+      },
+      {
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497,
+        "channel": 1,
+        "tick": 120000,
+        "order": 9,
+        "time": 2
+      },
+      {
+        "type": "noteOff",
+        "note": 60,
+        "channel": 1,
+        "tick": 141000,
+        "order": 10,
+        "time": 2.35
+      },
+      {
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497,
+        "channel": 1,
+        "tick": 192000,
+        "order": 11,
+        "time": 3.2
+      },
+      {
+        "type": "noteOff",
+        "note": 60,
+        "channel": 1,
+        "tick": 213000,
+        "order": 12,
+        "time": 3.5500000000000003
+      },
+      {
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497,
+        "channel": 1,
+        "tick": 300000,
+        "order": 13,
+        "time": 5
+      },
+      {
+        "type": "noteOff",
+        "note": 60,
+        "channel": 1,
+        "tick": 780000,
+        "order": 14,
+        "time": 13
+      },
+      {
+        "type": "noteOn",
+        "note": 65,
+        "velocity": 0.7874015748031497,
+        "channel": 1,
+        "tick": 840000,
+        "order": 15,
+        "time": 14
+      },
+      {
+        "type": "noteOff",
+        "note": 65,
+        "channel": 1,
+        "tick": 1320000,
+        "order": 16,
+        "time": 22
+      },
+      {
+        "type": "noteOn",
+        "note": 71,
+        "velocity": 0.7874015748031497,
+        "channel": 1,
+        "tick": 1380000,
+        "order": 17,
+        "time": 23
+      },
+      {
+        "type": "noteOff",
+        "note": 71,
+        "channel": 1,
+        "tick": 1860000,
+        "order": 18,
+        "time": 31
+      },
+      {
+        "type": "noteOn",
+        "note": 72,
+        "velocity": 0.7874015748031497,
+        "channel": 1,
+        "tick": 1920000,
+        "order": 19,
+        "time": 32
+      },
+      {
+        "type": "noteOff",
+        "note": 72,
+        "channel": 1,
+        "tick": 2400000,
+        "order": 20,
+        "time": 40
+      },
+      {
+        "type": "breath",
+        "value": 1,
+        "channel": 1,
+        "tick": 2448000,
+        "order": 21,
+        "time": 40.8
+      },
+      {
+        "type": "noteOn",
+        "note": 60,
+        "velocity": 0.7874015748031497,
+        "channel": 1,
+        "tick": 2472000,
+        "order": 22,
+        "time": 41.199999999999996
+      },
+      {
+        "type": "noteOff",
+        "note": 60,
+        "channel": 1,
+        "tick": 2652000,
+        "order": 23,
+        "time": 44.199999999999996
+      },
+      {
+        "type": "breath",
+        "value": 0,
+        "channel": 1,
+        "tick": 2655000,
+        "order": 24,
+        "time": 44.24999999999999
+      }
+    ],
+    "options": {
+      "duration": 48,
+      "breath": 0,
+      "dry": false
+    },
+    "frames": 2304000,
+    "wavSha256": "3aae082b8bf48bffd5e7fcbdcf101eebfe898c2fd3f04bb6a36e19462c2c0c91"
+  }
+]

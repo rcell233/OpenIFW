@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "presets": [
+    {
+      "id": "primer",
+      "name": "Primer",
+      "author": "STUDIO-R",
+      "program": 18,
+      "url": "/assets/presets/primer.json"
+    },
+    {
+      "id": "ai-no-labyrinth",
+      "name": "Ai no Labyrinth",
+      "author": "STUDIO-R",
+      "program": 14,
+      "url": "/assets/presets/ai-no-labyrinth.json"
+    },
+    {
+      "id": "daisy-area-2",
+      "name": "Daisy Area 2",
+      "author": "STUDIO-R",
+      "program": 10,
+      "url": "/assets/presets/daisy-area-2.json"
+    },
+    {
+      "id": "wanna-go-to-hawaii",
+      "name": "Wanna Go To Hawaii",
+      "author": "STUDIO-R",
+      "program": 8,
+      "url": "/assets/presets/wanna-go-to-hawaii.json"
+    },
+    {
+      "id": "judd-ish-2000",
+      "name": "JUDD-ish 2000",
+      "author": "STUDIO-R",
+      "program": 21,
+      "url": "/assets/presets/judd-ish-2000.json"
+    }
+  ]
+}

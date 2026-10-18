@@ -1,0 +1,3 @@
+*.ifwprog -text whitespace=cr-at-eol
+*.wav binary
+*.mid binary

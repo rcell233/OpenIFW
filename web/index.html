@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#182126" />
+    <title>OpenIFW · Wind Synth</title>
+    <meta
+      name="description"
+      content="Four oscillators, one shared wind synth engine, and native IFW preset import."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <div class="instrument" id="app">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="OpenIFW home"
+          ><span class="brand-mark">OpenIFW</span></a
+        >
+        <div class="program-area">
+          <div class="program-readout">
+            <span class="eyebrow">PROGRAM</span><b id="program-number">004</b>
+          </div>
+          <div class="preset-nav">
+            <button id="previous-preset" aria-label="上一个预设">‹</button
+            ><select id="preset-select" aria-label="选择音色">
+              <option value="factory">Tresure Island</option>
+              <option value="dry">Tresure Island · Dry</option>
+              <option value="sine">Init · Sine</option>
+              <option value="saw">Init · Saw</option>
+              <option value="user" hidden>Imported patch</option></select
+            ><button id="next-preset" aria-label="下一个预设">›</button>
+          </div>
+          <span id="dirty-indicator" class="edited"></span>
+          <h1 id="patch-name" class="sr-only">Tresure Island</h1>
+          <span id="patch-author" class="sr-only">STUDIO-R</span>
+        </div>
+        <div class="top-status">
+          <span class="status-light" id="audio-light"></span><span id="audio-status">AUDIO OFF</span
+          ><span id="sample-rate">48 kHz / stereo</span>
+        </div>
+        <div class="top-actions">
+          <button class="button quiet" id="midi-connect">
+            <span class="midi-icon">▥</span> 连接 MIDI</button
+          ><button class="button primary" id="audio-start"><span>▶</span> 启动音频</button
+          ><button class="icon-button" id="help-open" aria-label="使用说明">?</button>
+        </div>
+      </header>
+      <div class="instrument-toolbar">
+        <nav class="module-nav" id="module-nav" aria-label="合成模块"></nav>
+        <div class="utility-controls">
+          <label class="switch-row"
+            ><input type="checkbox" id="dry-toggle" role="switch" /><i></i><span>DRY</span></label
+          ><span class="toolbar-divider"></span
+          ><button class="text-button" id="import-patch" title="导入 .ifwprog 音色">↥ 导入</button
+          ><button class="text-button" id="export-patch" title="导出当前音色">↧ 导出</button
+          ><button
+            class="text-button"
+            id="reset-patch"
+            aria-label="恢复 Tresure Island"
+            title="恢复 Tresure Island"
+          >
+            ↶ 恢复</button
+          ><input type="file" id="patch-file" accept=".ifwprog,.json,.xml" hidden />
+        </div>
+      </div>
+      <main class="main-panel" data-panel="osc">
+        <div class="panel-heading">
+          <div class="panel-heading-title">
+            <span class="eyebrow" id="panel-eyebrow">SOUND GENERATORS</span>
+            <h2 id="panel-title">Oscillators<span>01–04</span></h2>
+          </div>
+          <div class="panel-heading-right">
+            <span class="tag">SHARED ENGINE</span
+            ><button class="text-button panic" id="panic">■ ALL NOTES OFF</button>
+          </div>
+        </div>
+        <div id="panel-content" class="panel-content"><div class="loading">正在载入音色…</div></div>
+      </main>
+      <div class="performance-strip">
+        <div class="scope-wrap">
+          <div class="scope-label"><span>OUTPUT</span><span id="output-db">−∞ dBFS</span></div>
+          <canvas id="scope" width="720" height="100" aria-label="实时输出波形"></canvas>
+        </div>
+        <div class="performance-control">
+          <div class="scope-label">
+            <span>BREATH <small id="breath-source">手动 / 屏幕键盘</small></span
+            ><span id="breath-value">100</span>
+          </div>
+          <input type="range" id="breath" min="0" max="127" value="100" aria-label="手动气息" />
+        </div>
+        <div class="performance-control">
+          <div class="scope-label">
+            <span>PITCH BEND <small>±2 st</small></span
+            ><span id="bend-value">0.00</span>
+          </div>
+          <input
+            type="range"
+            id="pitch-bend"
+            min="-1"
+            max="1"
+            step="0.001"
+            value="0"
+            aria-label="弯音"
+          />
+        </div>
+      </div>
+      <section class="keyboard-section" aria-label="演奏键盘">
+        <div class="keyboard-toolbar">
+          <div class="keyboard-caption">
+            <span class="eyebrow">49 KEYS</span><span id="note-display">—</span
+            ><span class="keyboard-help">A W S E D F T G Y H U J K</span>
+          </div>
+          <div class="keyboard-tools">
+            <label class="mini-select"
+              >OCTAVE
+              <select id="octave" aria-label="键盘八度">
+                <option value="36">C1</option>
+                <option value="48" selected>C2</option>
+                <option value="60">C3</option>
+                <option value="72">C4</option>
+              </select></label
+            ><label class="mini-select"
+              >VELOCITY
+              <input
+                type="number"
+                id="velocity"
+                min="1"
+                max="127"
+                value="100"
+                aria-label="键盘力度" /></label
+            ><button class="text-button" id="play-demo">▶ 试听乐句</button>
+          </div>
+        </div>
+        <div class="keyboard" id="keyboard"></div>
+        <div class="bottom-line">
+          <span>4 OSC · SYNC / FM · 3 FILTERS · 8 MOD</span><span id="midi-last">MIDI waiting</span
+          ><span>C3 = MIDI 60</span>
+        </div>
+      </section>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <dialog id="help-dialog">
+      <div class="dialog-top">
+        <span class="eyebrow">OPENIFW</span
+        ><button class="icon-button" id="help-close" aria-label="关闭说明">×</button>
+      </div>
+      <h2>四个振荡器，一套共用引擎。</h2>
+      <p>
+        直接导入原版 .ifwprog
+        参数，实时运行同步、FM、四个包络、双路滤波、调制矩阵和效果链。内置六个音色使用相同的合成算法。
+      </p>
+      <p>
+        拖动旋钮调整参数，按住 Shift 精细调节；点击数值可直接输入。每个 OSC 的 S
+        按钮可独奏。切换顶部模块编辑滤波、包络、效果和 MIDI，演奏键盘与气息控制始终可见。
+      </p>
+      <p>
+        默认 CC7 气息、CC9 振音、CC5 滑音，C3 = MIDI
+        60。屏幕键盘和电脑键盘使用手动气息；外接风管通过“连接 MIDI”接入。MIDI 页面支持载入 .mid
+        和离线导出 WAV。
+      </p>
+    </dialog>
+  </body>
+</html>
