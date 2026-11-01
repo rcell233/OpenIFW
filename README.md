@@ -23,6 +23,7 @@ Open <http://localhost:5173> and click **启动音频** (Start audio). Play the 
 - Phaser, chorus, two delays, reverb, exciter, and stereo enhancement.
 - Six built-in presets, editable parameters, and `.ifwprog` / JSON import.
 - Live breath, vibrato, glide, pitch bend, and channel aftertouch input.
+- Continuous same-frame note handoffs that preserve legato envelopes and honor retrigger settings.
 - Standard MIDI file playback and offline stereo WAV export.
 - Compact fixed panels with a four-octave keyboard.
 

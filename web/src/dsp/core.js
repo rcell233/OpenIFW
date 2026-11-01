@@ -427,6 +427,7 @@ export class Synth {
     this.effects = new Effects(sampleRate);
     this.filter3 = new Filter3(sampleRate);
     this.notes = [];
+    this.noteReleasePending = false;
     this.note = 60;
     this.pitch = 60;
     this.pitchTarget = 60;
@@ -528,7 +529,9 @@ export class Synth {
     this.breathStep = (this.breathTarget - this.breath) / this.breathSamplesLeft;
   }
   noteOn(note, velocity = 1) {
-    const legato = this.notes.length > 0;
+    // Off/on messages at one audio instant are a continuous note transition.
+    const legato = this.notes.length > 0 || this.noteReleasePending;
+    this.noteReleasePending = false;
     this.notes = this.notes.filter((n) => n.note !== note);
     this.notes.push({ note, velocity });
     this.note = note;
@@ -546,6 +549,7 @@ export class Synth {
     for (let i = 0; i < 2; i++) if (on(this.p['Lfo' + (i + 1) + 'KeySync'])) this.lfoPhase[i] = 0;
   }
   noteOff(note) {
+    if (!this.notes.some((n) => n.note === note)) return;
     this.notes = this.notes.filter((n) => n.note !== note);
     if (this.notes.length) {
       const n = this.notes.at(-1);
@@ -555,14 +559,14 @@ export class Synth {
       this.glideFrom = this.pitch;
       this.glideElapsed = 0;
     } else {
-      this.gateTarget = 0;
-      this.gateStep =
-        this.gate / Math.max(1, this.sampleRate * value(this.p, 'GateCloseSmoothTime', 15) * 0.001);
-      for (const eg of this.env) eg.gate(false);
+      // Commit a release only when audio advances. A same-frame replacement
+      // note can then retain the envelope, filter state and legato pitch path.
+      this.noteReleasePending = true;
     }
   }
   panic() {
     this.notes = [];
+    this.noteReleasePending = false;
     this.gate = this.gateTarget = this.gateStep = 0;
     this.breath = this.breathTarget = this.breathStep = this.breathSamplesLeft = 0;
     this.effects = new Effects(this.sampleRate);
@@ -767,6 +771,12 @@ export class Synth {
     }
     const sr = this.sampleRate,
       p = this.p;
+    if (length > 0 && this.noteReleasePending) {
+      this.noteReleasePending = false;
+      this.gateTarget = 0;
+      this.gateStep = this.gate / Math.max(1, sr * value(p, 'GateCloseSmoothTime', 15) * 0.001);
+      for (const eg of this.env) eg.gate(false);
+    }
     const bendK =
       1 - Math.exp(-1 / (sr * Math.max(0.0001, value(p, 'PitchBendSmoothTime', 5) * 0.001)));
     for (let i = 0; i < length; i++) {
